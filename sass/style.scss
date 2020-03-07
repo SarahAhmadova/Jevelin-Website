@@ -40,6 +40,7 @@
     .dropdown-menu {
         z-index: -1;
         display: block;
+        min-width: max-content;
         visibility: hidden;
         padding: 0;
         margin: 0;
@@ -47,7 +48,7 @@
         border: none;
 
         a {
-            padding: 18px;
+            padding: 18px 23px;
             color: #32343d;
 
         }
@@ -73,8 +74,8 @@
 
     .item:hover .dropdown-menu {
         transition: .2s all ease-in-out;
-        right: 90%;
-        transform: translateX(10%);
+        right: 100%;
+        transform: translateX(5%);
         visibility: visible;
         position: absolute;
     }
