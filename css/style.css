@@ -203,13 +203,6 @@ nav a:hover {
   font-size: 18px !important;
 }
 
-@media (min-width: 576px) {
-  .clm {
-    -webkit-column-count: 2;
-            column-count: 2;
-  }
-}
-
 @-webkit-keyframes downtocenter {
   from {
     top: 60%;
@@ -236,11 +229,15 @@ nav a:hover {
   padding: 0 7%;
 }
 
-#blog .card-columns {
-  margin: 25px;
+#blog .news {
+  padding: 0 25px;
 }
 
-#blog .card-columns .card:hover {
+#blog .clm .card {
+  margin: 0 0 40px 0px;
+}
+
+#blog .clm .card:hover {
   top: 2px;
 }
 
@@ -327,6 +324,12 @@ nav a:hover {
 #blog .card-body .foot .badge {
   float: right;
   padding: 15px;
+}
+
+#blog .card-body .foot p > a {
+  font-size: 14px;
+  color: #aaaaaa;
+  text-transform: uppercase;
 }
 
 #blog .card-body p {

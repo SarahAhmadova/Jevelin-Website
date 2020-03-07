@@ -2,7 +2,7 @@
 @import 'color';
 
 ::selection {
-    background-color: #47c9e5;
+    background-color: $clr8;
     color: $clr1;
 }
 
@@ -23,7 +23,7 @@
     .item {
         position: relative;
         background-color: $clr1;
-        border-bottom: 1px solid #f1f3fc;
+        border-bottom: 1px solid $clr9;
 
         &:first-child {
             border-top-right-radius: 5px;
@@ -49,7 +49,7 @@
 
         a {
             padding: 18px 23px;
-            color: #32343d;
+            color: $clr10;
 
         }
 
@@ -189,14 +189,6 @@ nav {
     }
 }
 
-
-
-@media (min-width: 576px) {
-    .clm {
-        column-count: 2;
-    }
-}
-
 @keyframes downtocenter {
     from {
         top: 60%;
@@ -213,8 +205,15 @@ nav {
         padding: 0 7%;
     }
 
-    .card-columns {
-        margin: 25px;
+    .news {
+        padding: 0 25px;
+    }
+
+    .clm {
+
+        .card {
+            margin: 0 0 40px 0px;
+        }
 
         .card:hover {
             top: 2px;
@@ -296,7 +295,13 @@ nav {
             float: right;
             padding: 15px;
         }
-
+.foot{
+    p>a{
+        font-size: 14px;
+        color:$clr5;
+        text-transform: uppercase;
+    }
+}
         p {
             clear: both;
         }
@@ -314,7 +319,7 @@ nav {
             color: grey;
 
             &:hover {
-                background-color: #47c9e5;
+                background-color: $clr8;
                 color: $clr1;
                 border: 1px solid #f1f3fc00;
             }
@@ -322,7 +327,7 @@ nav {
         }
 
         .active {
-            background-color: #47c9e5;
+            background-color: $clr8;
             color: $clr1;
             border: none;
             font-weight: bold;
@@ -341,7 +346,7 @@ nav {
         color: $clr6;
 
         &:hover {
-            color: #47c9e5;
+            color: $clr8;
         }
     }
 
@@ -376,7 +381,7 @@ nav {
 
     &::before {
         content: '0';
-        background-color: #47c9e5;
+        background-color: $clr8;
         color: $clr1;
         border-radius: 5px;
         height: 15px;
@@ -412,44 +417,52 @@ nav {
         }
     }
 }
-.srch{
-    border-radius: 7px !important;
-    box-shadow: 0px 15px 45px -9px rgba(0,0,0,.2);
-    input{
-border: none;
-padding: 17px !important;
-border-radius: 7px !important;
-width: 80%;
-    &:focus{
-        outline: none;
-        box-shadow: 0;
-    }}
-button{
-    background-color: $clr7;
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-}
-.popular-tags h4{
-    margin: 20px 5px;
-} 
 
-.popular-tags .badge{
+.srch {
+    border-radius: 7px !important;
+    box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, .2);
+
+    input {
+        border: none;
+        padding: 17px !important;
+        border-radius: 7px !important;
+        width: 80%;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0;
+        }
+    }
+
+    button {
+        background-color: $clr7;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.popular-tags h4 {
+    margin: 20px 5px;
+}
+
+.popular-tags .badge {
     margin: 5px;
     font-size: 14px;
     padding: 10px !important;
-    color: #8d8d8d!important;
+    color: #8d8d8d !important;
     background-color: $clr7 !important;
     text-transform: uppercase;
-    &:hover{
-        background-color: #47c9e5!important;
-        color: $clr1!important;
+
+    &:hover {
+        background-color: $clr8 !important;
+        color: $clr1 !important;
     }
 }
+
 .advert {
     img {
         width: 100%;
@@ -479,7 +492,7 @@ button{
             }
 
             a:hover {
-                color: #47c9e5;
+                color: $clr8;
             }
 
             .title a:hover {
@@ -500,7 +513,7 @@ button{
         transition: .5s;
 
         &:hover {
-            background-color: #47c9e5;
+            background-color: $clr8;
         }
 
     }
