@@ -112,6 +112,12 @@ ul li {
   color: #294cff;
 }
 
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 header {
   height: 100px;
   position: relative;
@@ -171,6 +177,17 @@ nav a:hover {
   color: #fff;
 }
 
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 25px;
+}
+
 .social a {
   padding: 0 8px;
 }
@@ -179,6 +196,15 @@ nav a:hover {
   font-size: 16px;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+}
+
+@media (max-width: 1026px) {
+  #home .menu {
+    display: none !important;
+  }
+  .menu-btn {
+    display: block !important;
+  }
 }
 
 #home {
